@@ -2,7 +2,8 @@
 const searchGithub = async () => {
   try {
     console.log("GitHub Token:", import.meta.env.VITE_GITHUB_TOKEN); // Debugging
-
+    console.log("All env variables:", import.meta.env);
+    
     if (!import.meta.env.VITE_GITHUB_TOKEN) {
       throw new Error("GitHub Token is missing! Check your .env file.");
     }
